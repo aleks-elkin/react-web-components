@@ -33,18 +33,14 @@ function App() {
 
   const props = isDark ? { isDark: true } : {};
 
+  const onThemeChange = () => setIsDark(!isDark);
+
   return (
     <>
       <div className="controls">
         <div className="container">
           <label>Theme: </label>
-          <input
-            type="checkbox"
-            id="dark"
-            checked={isDark}
-            disabled={isDark}
-            onChange={() => setIsDark(!isDark)}
-          />
+          <input type="checkbox" id="dark" checked={isDark} onChange={onThemeChange} />
           <label htmlFor="dark">Dark</label>
         </div>
         <div className="container">

@@ -13,13 +13,17 @@ function App() {
     isDark ? root.classList.add("dark") : root.classList.remove("dark");
   }, [isDark]);
 
+  const onThemeChange = () => setIsDark(!isDark);
+
   return (
     <>
       <div className="controls">
         <div className="container">
           <label>Theme: </label>
-          <input type="checkbox" id="dark" checked={isDark} onChange={() => setIsDark(!isDark)} />
-          <label htmlFor="dark">Dark</label>
+          <label>
+            <input type="checkbox" checked={isDark} onChange={onThemeChange} />
+            Dark
+          </label>
         </div>
         <div className="container">
           <label>Increment by: </label>
