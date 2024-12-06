@@ -1,0 +1,15 @@
+{
+  "name": "react-web-components",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/react-18",
+    "packages/react-19",
+    "packages/web-components"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": ""
+}

@@ -1,0 +1,7 @@
+{
+  "name": "web-components",
+  "private": true,
+  "version": "0.0.0",
+  "main": "web-counter.js",
+  "type": "module"
+}
